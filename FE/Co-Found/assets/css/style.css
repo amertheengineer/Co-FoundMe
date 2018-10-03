@@ -1,0 +1,1115 @@
+/* -------------------------------------------------------
+Template: CoFoundMe
+Version: 1.0
+Author: AminulHchy
+ -------------------------------------------------------*/
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+
+01. Web Fonts
+02. Typography
+03. Preloader
+04. Navbar
+05. Header
+06. About
+07. Work
+08. Features
+09. Pricing
+10. Team
+11. Footer
+12. SignUp Page
+
+
+/* ---------------------------------------------
+    01. Web Fonts
+--------------------------------------------- */
+@font-face {
+    font-family: 'pangram';
+    font-weight: 900;
+    src: url(../fonts/Pangram-Black.otf);
+}
+
+@font-face {
+    font-family: 'pangram';
+    font-weight: 700;
+    src: url(../fonts/Pangram-Bold.otf);
+}
+
+@font-face {
+    font-family: 'pangram';
+    font-weight: 400;
+    src: url(../fonts/Pangram-Regular.otf);
+}
+
+@font-face {
+    font-family: 'pangram';
+    font-weight: 500;
+    src: url(../fonts/Pangram-Medium.otf);
+}
+
+/* ---------------------------------------------
+    02. Typography
+--------------------------------------------- */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'pangram', sans-serif;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    opacity: 0.95;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.3;
+    overflow-x: hidden;
+    color: #1e1d2d;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; */
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 0.8;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-family: 'pangram';
+    font-weight: 500;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.boxed-btn {
+    font-family: 'pangram';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+    box-shadow: 0px 17px 38px 0px rgba(0, 213, 161, 0.15);
+    background-color: #00d5a1;
+    border-radius: 27px;
+    display: inline-block;
+    padding: 14px 24px;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: 1px solid transparent;
+}
+
+.boxed-btn:hover {
+    border: 1px solid #00d5a1;
+    background: #fff;
+    color: #00d5a1;
+    box-shadow: 0px 17px 38px 0px rgba(0, 213, 161, 0.25);
+}
+
+a,
+button {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+a:hover,
+a:focus,
+a button:hover,
+button:hover,
+button:focus,
+button button:hover {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.text-colored {
+    color: #00d5a1;
+}
+
+.section-title h2 {
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    line-height: 32px;
+}
+
+p {
+    opacity: 0.9;
+}
+
+.spt {
+    padding: 130px 0 0;
+}
+
+.spb-100 h2 {
+    margin-bottom: 100px;
+}
+
+.mt-130 {
+    margin-top: 100px;
+}
+
+::-moz-selection {
+    background: #00d5a1;
+    color: #fff;
+}
+
+::selection {
+    background: #00d5a1;
+    color: #fff
+}
+
+/* ---------------------------------------------
+    03. Preloader
+--------------------------------------------- */
+
+.preloader {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #0666e0;
+    top: 0;
+    left: 0;
+    z-index: 99999999999999999;
+}
+
+.preloader>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+
+.sk-folding-cube {
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+    animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+.sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+    transform: scale(1.1) rotateZ(90deg);
+}
+
+.sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+    transform: scale(1.1) rotateZ(180deg);
+}
+
+.sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+    transform: scale(1.1) rotateZ(270deg);
+}
+
+.sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+
+@-webkit-keyframes sk-foldCubeAngle {
+
+    0%,
+    10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+
+    25%,
+    75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    }
+
+    90%,
+    100% {
+        -webkit-transform: perspective(140px) rotateY(180deg);
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-foldCubeAngle {
+
+    0%,
+    10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+
+    25%,
+    75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    }
+
+    90%,
+    100% {
+        -webkit-transform: perspective(140px) rotateY(180deg);
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+/* ---------------------------------------------
+    04. Navbar
+--------------------------------------------- */
+nav.navbar {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-nav a {
+    color: #fff;
+    margin-left: 15px;
+    opacity: 0.9;
+}
+
+.navbar-nav .nav-item a.active,
+.navbar-nav a:hover {
+    color: #063da5;
+    opacity: 0.9;
+}
+
+div#sticky-wrapper.is-sticky .navbar-nav .nav-item a.active,
+div#sticky-wrapper.is-sticky .navbar-nav a:hover {
+    color: #0666e0;
+}
+
+.navbar-nav .nav-link.signin-btn {
+    background-color: rgba(6, 61, 165, .7);
+    border-radius: 27px;
+    padding: 10px 30px;
+    display: block !important;
+    text-transform: uppercase;
+    margin-left: 32px;
+    transition: .3s all;
+}
+
+div#sticky-wrapper.is-sticky .navbar-nav .nav-link.signin-btn {
+    border: 1px solid rgba(255, 255, 255, .9);
+    background: transparent;
+}
+
+.navbar-nav .nav-link.signin-btn:hover {
+    background-color: #fff;
+    color: #063da5;
+    opacity: 1;
+}
+
+div#sticky-wrapper.is-sticky .navbar-nav .nav-link.signin-btn:hover {
+    background-color: #0666e0;
+    color: #fff;
+    border-color: #0666e0;
+    opacity: 1;
+}
+
+/* Is Sticky */
+div#sticky-wrapper.is-sticky .navbar {
+    background: #1e1d2d;
+    top: 0;
+    -webkit-animation: fadeInDown 1s both;
+    animation: fadeInDown 1s both;
+    z-index: 999;
+}
+
+.is-sticky .sticky-nav {
+    -webkit-animation: fadeInDown 1s both;
+    animation: fadeInDown 1s both;
+    z-index: 999;
+}
+
+/* Mean menu */
+.mean-container .mean-bar {
+    background: transparent none repeat scroll 0 0;
+    min-height: 50px;
+    padding: 0;
+    margin: 15px 15px !important;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.mean-container a.meanmenu-reveal {
+    border: 1px solid;
+    margin-top: 40px;
+    margin-right: 80px;
+    padding: 4px 5px;
+    position: absolute;
+    z-index: 99;
+}
+
+.is-sticky .mean-container a.meanmenu-reveal {
+    margin-top: 5px;
+    -webkit-animation: fadeInDown 1s both;
+    animation: fadeInDown 1s both;
+}
+
+.mean-container .mean-nav ul {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mean-container .mean-nav {
+    margin-top: -14px;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+    height: 28px;
+}
+
+.mean-container .mean-nav ul li a {
+    text-transform: capitalize;
+}
+
+/* ---------------------------------------------
+    05. Header
+--------------------------------------------- */
+#header {
+    padding: 225px 0 20px;
+    color: #fff;
+    background-color: #0666e0;
+    background-image: url(../img/header/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#header p {
+    opacity: 0.9;
+    width: 65%;
+    margin: 0 auto;
+    line-height: 32px;
+}
+
+#header h1 {
+    margin-bottom: 30px;
+}
+
+#header p {
+    margin-bottom: 50px;
+}
+
+#header img {
+    margin-top: 80px;
+}
+
+/* ---------------------------------------------
+    06. About
+--------------------------------------------- */
+
+/* ---------------------------------------------
+    07. Work
+--------------------------------------------- */
+.work-item {
+    padding: 20px 15px 40px;
+    box-shadow: -25.069px 29.876px 50px 0px rgba(40, 37, 49, 0.04);
+    height: 377px;
+}
+
+.workicon {
+    width: 145px;
+    height: 145px;
+    line-height: 145px;
+    border-radius: 50%;
+    margin: 0 auto 40px;
+    position: relative;
+}
+
+.workicon-1 {
+    background: #0666e0;
+}
+
+.workicon-2 {
+    background: #00d5a1;
+}
+
+.workicon-3 {
+    background: #666de8;
+}
+
+.workicon-4 {
+    background: #ffb15b;
+}
+
+.work-item h4 {
+    margin-bottom: 26px;
+    line-height: 0.8;
+}
+
+.work-item p {
+    line-height: 32px;
+    letter-spacing: normal;
+}
+
+/*  workicon animation */
+.workicon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+}
+
+.workicon {
+    -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+    -webkit-transition: background 0.2s, -webkit-transform ease-out 0.1s;
+    transition: background 0.2s, -webkit-transform ease-out 0.1s;
+    transition: transform ease-out 0.1s, background 0.2s;
+    transition: transform ease-out 0.1s, background 0.2s, -webkit-transform ease-out 0.1s;
+}
+
+.workicon:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.work-item:hover .workicon {
+    -webkit-transform: scale(0.93);
+    transform: scale(0.93);
+}
+
+.work-item:hover .workicon-1::after {
+    -webkit-animation: icononeeffect 1.3s ease-out 75ms;
+    animation: icononeeffect 1.3s ease-out 75ms;
+}
+
+.work-item:hover .workicon-2::after {
+    -webkit-animation: animatetwo 1.3s ease-out 75ms;
+    animation: animatetwo 1.3s ease-out 75ms;
+}
+
+.work-item:hover .workicon-3::after {
+    -webkit-animation: animatethree 1.3s ease-out 75ms;
+    animation: animatethree 1.3s ease-out 75ms;
+}
+
+.work-item:hover .workicon-4::after {
+    -webkit-animation: animatefour 1.3s ease-out 75ms;
+    animation: animatefour 1.3s ease-out 75ms;
+}
+
+/* ---------------------------------------------
+    08. Features
+--------------------------------------------- */
+.features h2 {
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+.features p {
+    line-height: 35px;
+}
+
+.features {
+    position: relative;
+    padding: 100px 0 100px;
+}
+
+.features-text {
+    padding: 60px 0 0;
+}
+
+.features-three .features-text {
+    padding: 105px 0 0;
+}
+
+.features-four .features-text {
+    padding: 100px 0 0;
+}
+
+.features-five .features-text {
+    padding: 70px 0 0;
+}
+
+.features::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.12;
+}
+
+.features-five::after,
+.features-three::after,
+.features-one::after {
+    background-image: -moz-linear-gradient(45deg, rgb(100, 189, 254) 0%, rgba(250, 251, 253, 0) 100%);
+    background-image: -webkit-linear-gradient(45deg, rgb(100, 189, 254) 0%, rgba(250, 251, 253, 0) 100%);
+    background-image: -ms-linear-gradient(45deg, rgb(100, 189, 254) 0%, rgba(250, 251, 253, 0) 100%);
+}
+
+.features-four::after,
+.features-two::after {
+    background-image: -moz-linear-gradient(116deg, rgb(100, 190, 255) 0%, rgba(250, 251, 253, 0) 100%);
+    background-image: -webkit-linear-gradient(116deg, rgb(100, 190, 255) 0%, rgba(250, 251, 253, 0) 100%);
+    background-image: -ms-linear-gradient(116deg, rgb(100, 190, 255) 0%, rgba(250, 251, 253, 0) 100%);
+}
+
+/* ---------------------------------------------
+    09. Pricing
+--------------------------------------------- */
+.pricing {
+    position: relative;
+    border-radius: 10px;
+    transition: .3s all;
+    box-shadow: -25.069px 29.876px 50px 0px rgba(40, 37, 49, 0.03);
+}
+
+.free-access {
+    border: 1px solid rgba(241, 240, 240, 0.8);
+    padding: 50px 0 80px;
+    transition: .3s all;
+}
+
+.pricing .pricing-head h3 {
+    font-size: 30px;
+    line-height: 0.8;
+    margin-bottom: 20px;
+}
+
+.pricing .pricing-head p {
+    letter-spacing: normal;
+}
+
+.pricing .pricing-head {
+    margin-bottom: 20px;
+}
+
+.pricing-price h1 {
+    line-height: 0.8;
+    margin-bottom: 20px;
+}
+
+.pricing-price h5 {
+    font-weight: 500;
+    line-height: 0.8;
+    margin-bottom: 30px;
+}
+
+.pricing-price p {
+    letter-spacing: normal;
+    line-height: 1.5;
+}
+
+.pricing-price {
+    margin-bottom: 80px;
+    padding: 0 25px;
+}
+
+.pricing-details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-details li {
+    padding: 18px 0;
+    opacity: .9;
+    border-radius: 10px;
+}
+
+.pricing .boxed-btn {
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.premium-access {
+    padding: 50px 0 80px;
+    background: #0666e0;
+    color: #fff
+}
+
+.pricing-details li {
+    box-shadow: -25.069px 29.876px 50px 0px rgba(40, 37, 49, 0.03);
+    margin: 2px 0;
+}
+
+.premium-access .pricing-details li {
+    box-shadow: 0 29.876px 50px 0px rgba(21, 20, 23, 0.17);
+    background: #0666e0;
+    position: relative;
+}
+
+.premium-access .pricing-details li:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: -25px 29px 50px 0px rgba(21, 20, 23, 0.17);
+    background: transparent;
+    z-index: 2;
+}
+
+.free-access .pricing-details li {
+    background: #fff;
+}
+
+
+/* 
+.premium-access:hover,
+.free-access:hover {
+    box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08)
+} */
+
+/* ---------------------------------------------
+    10. Team
+--------------------------------------------- */
+
+.team-member {
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease-out 0s;
+    box-shadow: -25.069px 29.876px 50px 0px rgba(40, 37, 49, 0.05);
+}
+
+.team-member.team-founder {
+    color: #fff;
+    background: #0666e0;
+}
+
+.team-member .team-img img {
+    margin-bottom: 30px;
+    border: 7px solid #3489f6;
+    border-radius: 50%;
+    box-shadow: 0px 7px 57px 0px rgba(44, 44, 62, 0.19);
+    transition: all 0.4s ease-out 0s;
+}
+
+.team-member h3 {
+    margin-bottom: 10px;
+    transition: all 0.4s ease-out 0s;
+}
+
+.team-member p {
+    margin-bottom: 30px;
+    /* transition: all 0.4s ease-out 0s; */
+}
+
+
+.team-member .social-icon a {
+    width: 50px;
+    height: 50px;
+    line-height: 56px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    transition: all 0.6s ease-out 0s;
+}
+
+.team-member .social-icon a i {
+    font-size: 28px;
+}
+
+.team-member .social-icon:hover a {
+    box-shadow: -8.356px 9.959px 38px 0px rgba(40, 37, 49, 0.07);
+    color: #0666e0;
+}
+
+.team-member:hover h3 {
+    transform: translateY(6px)
+}
+
+.team-member:hover .team-img img {
+    transform: translateY(10px)
+}
+
+.team-member:hover .social-icon a {
+    transform: translateY(10px)
+}
+
+.navy-seal {
+    margin: 130px 0;
+}
+
+/* ---------------------------------------------
+    11. Footer
+--------------------------------------------- */
+
+footer {
+    background: #0666e0;
+    color: #fff;
+}
+
+footer p {
+    letter-spacing: normal;
+}
+
+.subscribe {
+    margin: 100px 0 180px;
+}
+
+.subscribe h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.subscribe input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 0;
+    width: 60%;
+    float: left;
+    padding: 14px 15px;
+    color: rgba(255, 255, 255, .8) !important;
+}
+
+.subscribe input::placeholder {
+    color: #fff;
+    opacity: .6;
+}
+
+.subscribe input:active,
+.subscribe input:hover,
+.subscribe input:focus {
+    background: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.subscribe .boxed-btn {
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+footer a {
+    color: #fff;
+    opacity: 1;
+}
+
+footer a:hover {
+    color: #fff;
+    opacity: .7;
+}
+
+footer p {
+    opacity: 0.9;
+}
+
+.footer-about p {
+    font-size: 16px;
+}
+
+.footer-about p.address {
+    margin-bottom: 20px;
+}
+
+.footer-about p:nth-child(3) {
+    line-height: 30px;
+}
+
+.footer-about img {
+    margin-bottom: 40px;
+}
+
+.footer-top {
+    margin-bottom: 66px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 14px;
+}
+
+footer ul li:last-child {
+    margin-bottom: 0;
+}
+
+.copyright-text {
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    padding: 40px 0;
+}
+
+.copyright-text p {
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+.copyright-text p a {
+    opacity: 1;
+}
+
+.footer-social li {
+    display: inline-block;
+}
+
+.footer-social li a {
+    opacity: 1;
+    padding-left: 20px;
+}
+
+.footer-social li a:hover {
+    opacity: 0.9;
+}
+
+
+/* ---------------------------------------------
+    12. SignUp Page
+--------------------------------------------- */
+
+#signup {
+    background: #0666e0;
+    padding: 70px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.signup-header h1 {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 36px;
+}
+
+.signup-header p {
+    margin-bottom: 80px;
+}
+
+
+.cofounder,
+.founder {
+    padding: 40px 45px 80px;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-out 0s;
+}
+
+.showicon .cofounder,
+.showicon .founder,
+.cofounder:hover,
+.founder:hover {
+    box-shadow: 0px 18px 21px 0px rgba(40, 37, 49, 0.26);
+}
+
+.cofounder {
+    padding: 0 45px 80px;
+}
+
+.cofounder h1,
+.founder h1 {
+    font-size: 70px;
+    color: #0666e0;
+    line-height: 60px;
+    padding: 47px 0;
+    margin-bottom: 0;
+}
+
+.cofounder p,
+.founder p {
+    color: #181723;
+}
+
+.cofounder .select-icon,
+.founder .select-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.pagebtns {
+    margin-top: 80px;
+}
+
+.pagebtns button {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 12px 70px;
+    border-radius: 27px;
+    margin: 0 15px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.pagebtns button.next-btn {
+    background: #00d5a1;
+    border-color: #00d5a1;
+}
+
+.pagebtns button:hover {
+    background: #00d5a1;
+    border-color: #00d5a1;
+}
+
+.pagebtns button.next-btn:hover {
+    border-color: #fff;
+}
+
+.modal-content {
+    background: transparent;
+    border: 0;
+}
+
+.green-color {
+    color: #00d5a1
+}
+
+.signup-form h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.signup-form p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.signup-form input {
+    border-radius: 5px;
+    height: 50px;
+    margin-bottom: 25px;
+    border: 0;
+}
+
+.signup-form .form-control:focus {
+    box-shadow: none;
+    border: 0
+}
+
+.signup-btn button {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 12px 70px;
+    border-radius: 27px;
+    margin: 0 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signup-btn button.submit {
+    background: #00d5a1;
+    border-color: #00d5a1;
+}
+
+.signup-btn button:hover {
+    background: #00d5a1;
+    border-color: #00d5a1;
+}
+
+.signup-btn button.submit:hover {
+    border-color: #fff;
+}
+
+.showicon .select-icon {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.select-icon {
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s all;
+    transform: scale(0.5);
+}
+
+.modal {
+    background: rgba(30, 29, 45, .9);
+}

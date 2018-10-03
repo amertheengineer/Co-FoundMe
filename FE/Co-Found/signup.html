@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CoFoundMe</title>
+
+    <!--favicon and touch icon-->
+    <!-- <link rel="icon" type="image/png" href="assets/img/favicon.png"> -->
+
+    <!-- ====================
+        Stylesheet
+    ======================-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/css/modal-video.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+</head>
+
+<body>
+
+    <!--===// Start:  Preloader
+    =================================-->
+    
+    <div class="preloader">
+        <div class="loader">
+            <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--===// End: Preloader
+    =================================-->
+
+    <!--===// Start:  SignUp
+    =================================-->
+
+    <section id="signup">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 signup-header">
+                    <h1>I’m a </h1>
+                    <p>Your future partner is waiting for you to collaborate on the next big idea. Tell us more about who you are</p>
+                </div>
+            </div>
+            <div class="row" id="titles">
+                <div class="col-lg-6 col-12 mb-5 mb-lg-0 text-center titlesname showicon wow fadeInLeft" data-wow-delay="0.1s">
+                    <section class="select-title">
+                        <div class="founder">
+                            <div class="select-icon"><img src="assets/img/signup/icon-checker.png" alt="cofoundme"></div>
+                            <img src="assets/img/signup/founder-img.png" alt="CoFoundMe">
+                            <h1>Founder</h1>
+                            <p>You are constanly coming up with new ideas
+                                to change the world. You are an innovator</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-lg-6 col-12 text-center titlesname wow fadeInRight" data-wow-delay="0.3s">
+                    <section class="select-title">
+                        <div class="cofounder">
+                            <div class="select-icon"><img src="assets/img/signup/icon-checker.png" alt="cofoundme"></div>
+                            <img src="assets/img/signup/cofounder-img.png" alt="CoFoundMe">
+                            <h1>CoFounder</h1>
+                            <p>You always know what to do next and how to make things work. You are an executor</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-12 pagebtns">
+                    <a href="index.html"><button class="signup-btn">BACK</button></a>
+                    <button type="button" class="next-btn" data-toggle="modal" data-target="#founder-signup">Next</button>
+                </div>
+
+                <!-- Start Founder Modal -->
+                <div class="modal fade" id="founder-signup" tabindex="-1" role="dialog" aria-labelledby="signupformLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body signup-form">
+                                <h1>Sign Up Now</h1>
+                                <p>Create your account <br> as a <span class="green-color">Founder</span></p>
+                                <form action="https://formspree.io/aminulchy98@gmail.com" method="POST" id="contact-from">
+                                    <div class="form-group">
+                                        <input type="hidden" name="Title" class="form-control" value="Founder">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="Email" class="form-control" placeholder="Email address" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" name="First Name" class="form-control" placeholder="First Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="Last Name" class="form-control" placeholder="Last Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="Password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="signup-btn">
+                                        <button data-dismiss="modal">BACK</button>
+                                        <button type="submit" class="submit">Submit</button>
+                                    </div>
+                                    <div class="form-messages"></div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Founder Modal -->
+
+                <!-- Start Cofounder Modal -->
+
+                <div class="modal fade" id="cofounder-signup" tabindex="-1" role="dialog" aria-labelledby="signupformLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body signup-form">
+                                <h1>Sign Up Now</h1>
+                                <p>Create your account <br> as a <span class="green-color">CoFounder</span></p>
+                                <form action="https://formspree.io/aminulchy98@gmail.com" method="POST" id="contact-from">
+                                    <div class="form-group">
+                                        <input type="hidden" name="Title" class="form-control" value="Co-Founder">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="Email" class="form-control" placeholder="Email address" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" name="First Name" class="form-control" placeholder="First Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="Last Name" class="form-control" placeholder="Last Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="signup-btn form-group">
+                                        <button data-dismiss="modal">BACK</button>
+                                        <button type="submit" class="submit">Submit</button>
+                                    </div>
+                                    <div class="form-messages"></div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Cofounder Modal -->
+            </div>
+        </div>
+    </section>
+
+    <!--===// End: SignUp
+    =================================-->
+
+    <!-- Scripts  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/smoothscrollm.js"></script>
+    <script src="assets/js/jquery-modal-video.min.js"></script>
+    <script src="assets/js/modal-video.min.js"></script>
+
+    <!-- custom script -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+    /*------------------------------------
+        SignUP Form
+    --------------------------------------*/
+
+    var header = document.getElementById("titles");
+    var btns = header.getElementsByClassName("titlesname");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("showicon");
+            current[0].className = current[0].className.replace(" showicon", "");
+            this.className += " showicon";
+        });
+    }
+
+    $(".founder").click(function () {
+        $(".next-btn").attr("data-target", "#founder-signup");
+    });
+
+    $(".cofounder").click(function () {
+        $(".next-btn").attr("data-target", "#cofounder-signup");
+    });
+    new WOW().init();
+</script>
+
+</body>
+
+</html>

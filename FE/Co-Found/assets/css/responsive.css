@@ -1,0 +1,104 @@
+@media only screen and (max-width:992px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    #header h1 {
+        font-size: 32px;
+        line-height: 1.4;
+    }
+    
+    #header p {
+        width: 84%;
+    }
+
+    .features {
+        text-align: center;
+        padding: 0 0 0;
+    }
+
+    .features br {
+        display: none;
+    }
+
+    .features-text {
+        padding: 0 0 60px !important;
+    }
+
+    .features .container-fluid p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .pricing .boxed-btn {
+        padding: 14px 20px;
+    }
+
+    .subscribe {
+        margin: 100px 0 100px;
+    }
+
+    .cofounder h1, .founder h1 {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+
+    .founder {
+        padding: 40px 45px 50px;
+    }
+
+    .cofounder {
+        padding: 0 45px 50px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .team-member h3 {
+        font-size: 22px;
+    }
+
+    .signup-form h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    #header p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:576px) {
+
+    #work h2 {
+        line-height: 40px;
+    }
+
+    .work-item {
+        height: auto;
+    }
+
+    .copyright-text p {
+        margin-bottom: 20px;
+    }
+
+    .subscribe h1 {
+        font-size: 40px;
+        line-height: 1.3;
+    }
+    .subscribe input {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .subscribe .boxed-btn {
+        margin-left: 0;
+    }
+
+    .signup-btn button {
+        padding: 12px 40px;
+    }
+    .pagebtns button {
+        margin-bottom: 20px;
+        padding: 12px 50px;
+    }
+}
